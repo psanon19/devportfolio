@@ -25,7 +25,7 @@ SECRET_KEY = 'w7qxd!o_x^usw9@8iwcwg(emtiaud3qupcc^4+g2ys^8pt&tan'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['68.183.96.225','pelanesanon.com', 'www.pelanesanon.com']
+ALLOWED_HOSTS = ['127.0.0.1','68.183.96.225','pelanesanon.com', 'www.pelanesanon.com']
 
 
 # Application definition

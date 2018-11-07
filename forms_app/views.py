@@ -8,7 +8,7 @@ from .models import FormModel, ContactMeModel
 def index(request):
     form_list = FormModel.objects.all()
     context = {'form_list': form_list}
-    return render(request, 'forms_app/index.html', context)
+    return render(request, 'forms_app/aboutMe.html', context)
 
 
 def add(request):
@@ -52,3 +52,4 @@ def delete(request, pk):
 
 def reflections(request):
     print('monkey')
+
