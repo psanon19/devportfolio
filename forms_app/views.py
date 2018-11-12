@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
 from .forms import PostForm, ContactMeForm
-from .models import FormModel, ContactMeModel
+from .models import FormModel, WildCardModel
 
 
 def index(request):
@@ -53,3 +53,8 @@ def delete(request, pk):
 def reflections(request):
     print('monkey')
 
+
+def wildCards(request):
+    form_list = WildCardModel.objects.all()
+    context = {'form_list': form_list}
+    return render(request, 'forms_app/wildCard.html', context)
