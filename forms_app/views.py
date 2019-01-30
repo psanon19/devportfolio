@@ -63,9 +63,9 @@ def wildCards(request):
 def resume(request):
     form_list = FormModel.objects.all()
     context = {'form_list': form_list}
-    return render(request, 'forms_app/wildCard.html', context)
+    return render(request, 'forms_app/resume.html', context)
 
 
 def showcase(request):
-    return render(request, 'forms_app/wildCard.html')
+    return render(request, 'forms_app/showcase.html')
 
