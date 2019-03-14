@@ -1,6 +1,32 @@
 {% extends "forms_app/base.html" %}
+{% load static %}
 
 {% block info %}
 
+<div class="container">
+    <div class="border">
+        <h1>Tales Of Requiem</h1>
+        <h3>An Online Requiem Character Resource</h3>
+        <video width="600" controls>
+            <source src="{% static 'forms_app/webm/Tales of Requiem.webm' %}" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+       <div>
+            <p>Using Django, SQlite, HTML, CSS, Bootstrap, Javascript, and Python I made a comprehensive application that allows
+            users to make character sheets for the Requiem Tabletop Game.</p>
+       </div>
+        <hr/>
+        <h1>PCAB</h1>
+        <h3>A Programmers Vocabulary Guide</h3>
+        <video width="600" controls>
+            <source src="{% static 'forms_app/webm/Dec 7, 2018 12_53 PM.webm' %}" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+        <div>
+            <p>Using SQlite, HTML, CSS, Javascript, and Python with the aid of a partner we created a Vocabulary Application
+            that allows Admins to create timed tests for users to compare answers from previous test to track progress.</p>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
